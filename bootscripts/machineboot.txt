@@ -1,5 +1,0 @@
-sleep 5 &&
-echo "Executing custom script" &&
-bash /media/cdrom/smtp.txt &&
-bash /media/cdrom/automount.txt  &&
-bash /media/cdrom/bootedok.txt 

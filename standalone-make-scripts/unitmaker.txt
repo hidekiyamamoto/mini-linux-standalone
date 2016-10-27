@@ -1,0 +1,3 @@
+apt-get install -y customizer
+http://ubuntu-mini-remix.mirror.garr.it/mirrors/ubuntu-mini-remix/16.04/ubuntu-mini-remix-16.04-i386.iso
+http://ubuntu-mini-remix.mirror.garr.it/mirrors/ubuntu-mini-remix/16.04/ubuntu-mini-remix-16.04-amd64.iso
