@@ -30,9 +30,8 @@ With standalone+nodejs I can have a live distro that will automatically boot and
 
 Basically when I need to make a test about some creative device, that is expected to behave exaclty the same every time it is booted.
 For example i made a distro with preinstalled leap motion drivers and that would launch chromium in kiosk mode to a given url, with leap motion websocket activated.
+
 ----
-
-
 
 Make your own :  in the meanwhile here is the procedure:
 1 have a fairly clear _buntu matching the version you want to master live INSTALLED in some partition
