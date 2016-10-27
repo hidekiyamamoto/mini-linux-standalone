@@ -13,17 +13,21 @@ we will soon publish a website where authenticated users can freely generate one
 When gui is present in the flavor, it means xorg and fluxbox have been installed, and preconfigured
 to launch automatically, the customizable boot script will run inside an xterm in the fluxbox shell.
 
-standalone.io - our most basic iso.
-standalone-nodejs - live nodejs http server
-standalone-gui 490Mb [fluxbox virtualbox-qt]
+- standalone.io : our most basic iso.
+- standalone-nodejs : live nodejs http server.
+- standalone-gui : live fluxbox.
 
 ----
-Examples
-With standalone-gui + virtualbox I can have at my client a vmhost machine os being totally live, that means incorruptible, if i burn it on a disc for example. THe boot script will try and start the machines, if an error is encounter (for example the disks are new and the machines have not been imported, or the machine is unable to start) it will move the machine folder to some dump storage and reimport the last backupped ova from a network drive, notifying via mail the fact, and try start it again... then when appropriate I run a task that tests the operability of services in the virtual machines i am am using, then shut them down and backup a new ova...
+
+#Examples
+
+With standalone-gui + only virtualbox-qt package preinstalled I can have at my client a vmhost machine os being totally live, that means incorruptible, if i burn it on a disc for example. The boot script will try and start the machines, if an error is encounter (for example the disks are new and the machines have not been imported, or the machine is unable to start) it will move the machine folder to some dump storage and reimport the last backupped ova from a network drive, notifying via mail the fact, and try start it again... then when appropriate I run a task that tests the operability of services in the virtual machines i am am using, then shut them down and backup a new ova...
 Customizing the sending account and smtp, the network path for the ovas and everything else COULDN't BE EASIER, as they are free text files in the root of the usb.
-OR
+
+
 With standalone+nodejs I can have a live distro that will automatically boot and run a nodejs server file that I can modify as easily as modifing a file in the root of the usb key.
-OR
+
+
 Basically when I need to make a test about some creative device, that is expected to behave exaclty the same every time it is booted.
 For example i made a distro with preinstalled leap motion drivers and that would launch chromium in kiosk mode to a given url, with leap motion websocket activated.
 ----
