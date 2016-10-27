@@ -9,6 +9,5 @@ sleep 1 &&
 echo "Waiting...1" &&
 sleep 1 &&
 echo "Executing custom script..." &&
-bash /media/cdrom/automount-ro.txt  &&
 bash /media/cdrom/standalone-boot-script/demo.txt &&
 echo "Custom script has ended"

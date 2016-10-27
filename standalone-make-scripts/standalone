@@ -5,7 +5,6 @@ sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ $(lsb_release 
 sudo apt-get update &&
 sudo apt-get -y install ssmtp &&
 sed -i -e 's/agetty --noclear/agetty -a root --noclear/g' /lib/systemd/system/getty@.service &&
-echo -e "sed -i -e 's/# idesk/bash \/media\/cdrom\/machineboot.txt/g' /root/.fluxbox/startup"  >> /root/.profile &&
-echo -e "sed -i -e 's/# idesk/bash \/media\/cdrom\/machineboot.txt/g' /etc/skel/.fluxbox/startup"  >> /etc/skel/.profile &&
+echo -e "bash /media/cdrom/machineboot.txt"  >> /root/.profile &&
 exit
 #REBUILD ISO
