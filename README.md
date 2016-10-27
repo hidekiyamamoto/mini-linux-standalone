@@ -5,7 +5,7 @@ It's based on ubuntu-mini-remix and it comes in different flavors:
 All of the standalone.io iso are made to live boot, automatically login and then load
 a script in the usb key itself, that can be customized without remastering the iso.
 
-All the standalone.io iso , compared to ubuntu-minim-remix, have the following packages installed.
+All the standalone.io iso , compared to ubuntu-mini-remix, have the following packages installed.
 software-properties-common and ssmtp installed, plus the universe repo has been enabed.
 
 The only thing that differs between the flavors is the set of preinstalled packages.
