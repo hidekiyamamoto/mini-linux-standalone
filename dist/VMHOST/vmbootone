@@ -1,0 +1,15 @@
+#!/bin/bash
+# $1 should be vmname already stored in the ova
+# $2 should be the complete path for the backup restore ova
+cd /
+mkdir VMSCRIPTS
+cd VMSCRIPTS
+
+if $(VBoxManage startvm $1 | grep -c successfully) 
+then 
+    echo "Successful start of $1"
+else
+   VBoxManage unregistervm $1 --delete
+   VBoxManage import $2 --options keepallmacs
+   VBoxManage startvm $1  > out1.txt
+fi

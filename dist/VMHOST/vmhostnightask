@@ -1,0 +1,20 @@
+#READ INIT FILE
+
+mkdir VMS
+VBoxManage setproperty machinefolder $(readlink -f ./VMS)
+
+VBoxManage startvm vm1 >out1.txt
+if grep -c successfully out1.txt
+then
+   VBoxManage controlvm vm1 acpipowerbutton
+   VBoxManage export --output vm1.ova vm1.ova
+   #RESTART
+else
+    VBoxManage unregistervm vm1 --delete
+    VBoxManage import vm1.ova  --options keepallmacs
+fi
+
+
+VBoxManage showvminfo "vm1" | grep -c "running (since"
+
+

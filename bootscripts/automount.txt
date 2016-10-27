@@ -1,0 +1,18 @@
+cd /media
+sudo lsblk -o KNAME,HOTPLUG,KNAME,FSTYPE,KNAME > parts.txt
+grep ext parts.txt >> amount.txt
+grep ntfs parts.txt >> amount.txt
+sed -i -e 's/     /   /g' /media/amount.txt
+sed -i -e 's/  ntfs   / \/media\//g' /media/amount.txt
+sed -i -e 's/  ext2   / \/media\//g' /media/amount.txt
+sed -i -e 's/  ext3   / \/media\//g' /media/amount.txt
+sed -i -e 's/  ext4   / \/media\//g' /media/amount.txt
+sed -i -e 's/^/mkdir /' /media/amount.txt &&
+sed -i -e 's/      1/ | mount \/dev\//g' /media/amount.txt
+sed -i -e 's/      0/ | mount \/dev\//g' /media/amount.txt
+sed -i -e 's/dev\/ /\/dev\//g' /media/amount.txt
+sed -i -e 's/dev\/ /\/dev\//g' /media/amount.txt
+sed -i -e 's/dev\/ /\/dev\//g' /media/amount.txt
+rm parts.txt 
+bash amount.txt
+echo "rm amount.txt"

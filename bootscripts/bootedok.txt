@@ -1,0 +1,3 @@
+echo -e "To: hideki.yamamoto@gmail.com\nFrom: hideki.machines@gmail.com\nSubject: HMACHINE ALERT\n\nInstallation complete!" >> email.txt &&
+ssmtp hideki.yamamoto@gmail.com < email.txt &&
+rm email.txt 

@@ -1,0 +1,1 @@
+echo -e "root=hideki.machines@gmail.com\nmailhub=smtp.gmail.com:465\nrewriteDomain=gmail.com\nAuthUser=hideki.machines@gmail.com\nAuthPass=\$Encrypted\nFromLineOverride=YES\nUseTLS=YES\n" >> /etc/ssmtp/ssmtp.conf

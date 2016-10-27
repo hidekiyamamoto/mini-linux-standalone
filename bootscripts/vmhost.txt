@@ -1,0 +1,7 @@
+sleep 5 &&
+echo "vmhost live machine booted" &&
+cd /media &&
+mkdir disk1 &&
+mkdir disk2 &&
+mount /dev/sda2 /media/disk1 &&
+mount /dev/sda5 /media/disk2 

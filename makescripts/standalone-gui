@@ -1,0 +1,26 @@
+sudo apt-get update &&
+sudo apt-get  -y install software-properties-common &&
+sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ $(lsb_release -sc) universe multiverse" &&
+sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ $(lsb_release -sc)-updates universe multiverse" &&
+sudo apt-get update &&
+sudo apt-get -y install ssmtp xorg fluxbox virtualbox-qt &&
+sed -i -e 's/agetty --noclear/agetty -a root --noclear/g' /lib/systemd/system/getty@.service &&
+echo -e "if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then" >> /root/.profile &&
+echo -e "cp -r /etc/skel/.fluxbox /root" >> /root/.profile &&
+echo -e "sed -i -e 's/# idesk/xterm -hold -e \/media\/cdrom\/machineboot.txt/g' /root/.fluxbox/startup"  >> /root/.profile &&
+echo -e "  exec startx" >> /root/.profile &&
+echo -e "fi" >> /root/.profile &&
+echo -e "if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then" >> /etc/skel/.profile &&
+echo -e "sed -i -e 's/# idesk/xterm -hold -e \/media\/cdrom\/machineboot.txt/g' /etc/skel/.fluxbox/startup"  >> /etc/skel/.profile &&
+echo -e "  exec startx" >> /etc/skel/.profile &&
+echo -e "fi" >> /etc/skel/.profile 
+
+#EXIT
+#CLICK DESKTOP
+#RIGHT CLICK -> EXIT
+#REBUILD ISO
+
+#SEND EMAIL
+#echo -e "To: hideki.yamamoto@gmail.com\nFrom: hideki.machines@gmail.com\nSubject: HMACHINE ALERT\n\nInstallation complete!" >> email.txt
+#ssmtp hideki.yamamoto@gmail.com < email.txt
+#rm email.txt
