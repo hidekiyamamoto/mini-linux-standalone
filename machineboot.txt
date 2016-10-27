@@ -1,13 +1,13 @@
-echo "Waiting...5" &&
-sleep 1 &&
-echo "Waiting...4" &&
-sleep 1 &&
-echo "Waiting...3" &&
-sleep 1 &&
-echo "Waiting...2" &&
-sleep 1 &&
-echo "Waiting...1" &&
-sleep 1 &&
-echo "Executing custom script..." &&
-bash /media/cdrom/standalone-boot-script/demo.txt &&
+echo "Waiting...5"
+sleep 1s 
+echo "Waiting...4"
+sleep 1s 
+echo "Waiting...3"
+sleep 1s 
+echo "Waiting...2"
+sleep 1s 
+echo "Waiting...1"
+sleep 1s 
+echo "Executing custom script..."
+bash /media/cdrom/standalone-boot-script/demo.txt 
 echo "Custom script has ended"
