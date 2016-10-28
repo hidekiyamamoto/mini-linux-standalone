@@ -1,0 +1,6 @@
+echo "Installing requisites..."
+sudo apt-get install -y git unzip build-essential fakeroot make binutils g++ python python-dev python-qt4 pyqt4-dev-tools squashfs-tools xorriso x11-xserver-utils xserver-xephyr qemu-kvm dpkg-dev debhelper qt4-dev-tools qt4-linguist-tools --no-install-recommends && echo "Downloading customizer."
+wget https://github.com/kamilion/customizer/archive/master.zip && echo "Preparing customizer..."
+unzip master.zip -d . && echo "Installing customizer..."
+cd customizer-master &&
+make && make install

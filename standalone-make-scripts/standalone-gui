@@ -13,7 +13,8 @@ echo -e "fi" >> /root/.profile &&
 echo -e "if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then" >> /etc/skel/.profile &&
 echo -e "sed -i -e 's/# idesk/xterm -hold -e \/media\/cdrom\/machineboot.txt/g' /etc/skel/.fluxbox/startup"  >> /etc/skel/.profile &&
 echo -e "  exec startx" >> /etc/skel/.profile &&
-echo -e "fi" >> /etc/skel/.profile 
+echo -e "fi" >> /etc/skel/.profile &&
+exit
 
 #EXIT
 #CLICK DESKTOP
