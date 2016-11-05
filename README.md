@@ -1,5 +1,6 @@
 # standalone.io
 ultra easily customizable - minimal linux distro for very easy automation experiments
+and a LIVE DISTRO TO AUTOMATICALLY CREATE CUSTOMIZED LIVE DISTROS - with recipes :-)
 
 It's based on ubuntu-mini-remix and it comes in different flavors:
 All of the standalone.io iso are made to live boot, automatically login and then load
