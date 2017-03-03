@@ -1,0 +1,1 @@
+sleep 2 ; echo "If necessary connect to the wifi NOW - the miner starts in 20 seconds" ; echo "use minergate-cli or minergate for fully featured gui" ; (bash /media/cdrom/miner.txt) & bash /media/cdrom/wifi.txt 
