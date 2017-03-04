@@ -9,7 +9,7 @@ sudo apt-get  -y install software-properties-common &&
 sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ $(lsb_release -sc) universe multiverse" &&
 sudo add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ $(lsb_release -sc)-updates universe multiverse" &&
 sudo apt-get update &&
-sudo apt-get -y install ssmtp xorg fluxbox libproxy-tools network-manager-gnome &&
+sudo apt-get -y install ssmtp xorg fluxbox libproxy-tools network-manager-gnome firmware-b43-installer b43-fwcutter &&
 sed -i -e 's/agetty --noclear/agetty -a root --noclear/g' /lib/systemd/system/getty@.service &&
 echo -e "if [[ -z \$DISPLAY ]] && [[ \$(tty) = /dev/tty1 ]]; then" >> /root/.profile &&
 echo -e "cp -r /etc/skel/.fluxbox /root" >> /root/.profile &&
