@@ -1,5 +1,6 @@
 #If you have doubts read documentation about how to create the MAKER MACHINE or MAKER ENVIRONMENT - btw it's a basic lubuntu 16.04, plus customizer-gui installed
-#1 - Using customizer-gui in a maker unit, start with Ubuntu mini remix amd64 the terminal and paste what follows.
+#1 - Using customizer-gui in a maker unit, start with Ubuntu mini remix amd64 
+# - Wait for unpacking then click TERMINAL and paste in one move what follows.
 
 sudo apt-get update &&
 sudo apt-get  -y install software-properties-common &&
