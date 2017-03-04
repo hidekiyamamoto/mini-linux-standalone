@@ -1,4 +1,5 @@
 #If you have doubts read documentation about how to create the MAKER MACHINE or MAKER ENVIRONMENT - btw it's a basic lubuntu 16.04, plus customizer-gui installed
+#Instructions to make a MAKER UNIT are here https://github.com/hidekiyamamoto/standalone.io/blob/master/standalone-make-scripts/unitmaker.txt
 #1 - Using customizer-gui in a maker unit, start with Ubuntu mini remix amd64 
 # - Wait for unpacking then click TERMINAL and paste in one move what follows.
 
