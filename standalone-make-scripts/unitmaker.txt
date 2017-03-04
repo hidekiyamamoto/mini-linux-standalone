@@ -1,3 +1,4 @@
-apt-get install -y customizer
-http://ubuntu-mini-remix.mirror.garr.it/mirrors/ubuntu-mini-remix/16.04/ubuntu-mini-remix-16.04-i386.iso
-http://ubuntu-mini-remix.mirror.garr.it/mirrors/ubuntu-mini-remix/16.04/ubuntu-mini-remix-16.04-amd64.iso
+# To make a unit for making standalone.io distros by yourself:
+#1 - Fresh install Lubuntu (I tested with 14,15,16 x86 and AMD64)
+#2 - apt-get install -y customizer
+#3 - you are ready - to launch customizer, insted of using the menu entry i suggest you use terminal and digit "sudo customizer-gui", it's much more informative this way.
