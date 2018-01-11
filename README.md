@@ -49,7 +49,7 @@ Make your own :  in the meanwhile here is the generic procedure for every ISO re
 - - select iso button and choose the ubuntu mini remix iso that you have previously dowloaded. WAIT.
 - - upon completion click terminal and copy paste your version of the MAKESTANDALONE script (or one of our recipes) and press ENTER
 - - upon completion close terminal typing exit
-- - IF desktop button is enabled click it, wait for the fluxbox desktop, then rightclick and exit
+- - IF desktop button is enabled click it, wait for the fluxbox desktop, then rightclick and exit - THIS IS VERY IMPORTANT
 - - Click rebuild ISO
 - - Using a tool like UUI master the iso in some usb key
 - - Create a new machineboot.txt file in the root of the usb key. (this will be executed automatically)
