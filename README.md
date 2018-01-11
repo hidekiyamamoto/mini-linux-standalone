@@ -47,7 +47,7 @@ Make your own :  in the meanwhile here is the generic procedure for every ISO re
 - 2 DO ONE OF OUR RECIPES
 - - sudo customizer-gui
 - - select iso button and choose the ubuntu mini remix iso that you have previously dowloaded. WAIT.
-- - upon completion click terminal and copy paste your version of the MAKESTANDALONE script and press ENTER
+- - upon completion click terminal and copy paste your version of the MAKESTANDALONE script (or one of our recipes) and press ENTER
 - - upon completion close terminal typing exit
 - - IF desktop button is enabled click it, wait for the fluxbox desktop, then rightclick and exit
 - - Click rebuild ISO
