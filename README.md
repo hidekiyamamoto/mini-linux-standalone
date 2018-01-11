@@ -38,17 +38,18 @@ For example i made a distro with preinstalled leap motion drivers and that would
 
 ----
 
-Make your own :  in the meanwhile here is the procedure:
-- 1 have a fairly clear _buntu matching the version you want to master live INSTALLED in some partition
+Make your own :  in the meanwhile here is the generic procedure for every ISO recipe.
+- 1 PREPARE THE MACHINE THAT YOU WILL BE USING TO MAKE your isos
+-- have a fairly clear _buntu matching the version you want to master live INSTALLED in some partition
   boot it and do the following:
-- 2 download ubuntu mini remix
-- 3 apt-get install customizer
-- 4 sudo customizer-gui
-- 5 Select iso and choose the ubuntu mini remix iso
-- 6 upon completion click terminal and copy paste your version of the MAKESTANDALONE script and press ENTER
-- 7 upon completion close terminal typing exit
-- 8 IF desktop button is enabled click it, wait for the fluxbox desktop, then rightclick and exit
-- 9 Click rebuild ISO
-- 10 Using a tool like UUI master the iso in some usb key
-- 11 Create a new machineboot.txt file in the root of the usb key. (this will be executed automatically)
-- 12 FINISH - you can boot a machine with the key and have your easily customizable script run at startup.
+-- have python running, clone the kamilion customizer repo and run installer.py
+- 2 DO ONE OF OUR RECIPES
+-- sudo customizer-gui
+-- select iso button and choose the ubuntu mini remix iso that you have previously dowloaded. WAIT.
+-- upon completion click terminal and copy paste your version of the MAKESTANDALONE script and press ENTER
+-- upon completion close terminal typing exit
+-- IF desktop button is enabled click it, wait for the fluxbox desktop, then rightclick and exit
+-- Click rebuild ISO
+-- Using a tool like UUI master the iso in some usb key
+-- Create a new machineboot.txt file in the root of the usb key. (this will be executed automatically)
+-- FINISH - you can boot a machine with the key and have your easily customizable script run at startup.
